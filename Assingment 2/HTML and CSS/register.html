@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #BFEA7C;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            border-radius: 50px;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            background-color: #cdf751;
+            padding: 40px; /* Increased padding for a larger form */
+            width: 400px; /* Increased width for a larger form */
+            text-align: center;
+        }
+        .registration-form input {
+            width: 100%;
+            padding: 15px; /* Increased padding for input fields */
+            margin-bottom: 15px;
+            font-size: large; /* Increased font size for input fields */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            background-color: transparent;
+        }
+        .registration-button {
+            background-color: #f0fd8a;
+            border: none;
+            padding: 15px; /* Increased padding for button */
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            font-size: large; /* Increased font size for button */
+        }
+        .registration-button:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <div class="registration-header">Register</div>
+        <hr>
+        <form class="registration-form" action="login.html">
+            <input type="text" id="Username" placeholder="Username">
+            <input type="password" id="Password" placeholder="Password">
+            <input type="email" id="Email" placeholder="Email">
+            <button class="registration-button" id="Reg-button">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>
